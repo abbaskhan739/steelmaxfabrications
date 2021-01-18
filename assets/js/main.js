@@ -1,9 +1,3 @@
-/**
-* Template Name: eBusiness - v2.2.0
-* Template URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function($) {
   "use strict";
 

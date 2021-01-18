@@ -92,7 +92,7 @@ a {
 }
 
 a:hover {
-  color: #eddf1a;
+  color: #3EC1D5;
   text-decoration: none;
 }
 
@@ -114,7 +114,7 @@ body {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #eddf1a;
+  background: #3EC1D5;
   color: #fff;
   padding: 6px 12px 9px 12px;
   font-size: 16px;
@@ -246,7 +246,7 @@ div#preloader {
 }
 
 #header .logo h1 span {
-  color: #eddf1a;
+  color: #3EC1D5;
 }
 
 #header .logo h1 a, #header .logo h1 a:hover {
@@ -273,7 +273,7 @@ div#preloader {
 }
 
 .header-bg {
-  background: url(../img/slider/slider1.jpg);
+  background: url(../img/slider/banner.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -1188,6 +1188,18 @@ preview-2
 --------------------------------------------------------------*/
 .reviews-area {
   background: url(../img/background/bg1.jpg);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.reviews-area2 {
+  background-color: red;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
