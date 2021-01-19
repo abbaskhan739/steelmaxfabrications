@@ -94,6 +94,7 @@ jQuery(document).ready(function($) {
 
     var this_form = $(this);
     var action = $(this).attr('action');
+    //console.log("hitting");
 
     if( ! action ) {
       this_form.find('.loading').slideUp();
@@ -104,7 +105,6 @@ jQuery(document).ready(function($) {
     this_form.find('.sent-message').slideUp();
     this_form.find('.error-message').slideUp();
     this_form.find('.loading').slideDown();
-    
     $.ajax({
       type: "POST",
       url: action,
