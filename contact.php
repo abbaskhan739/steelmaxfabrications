@@ -27,11 +27,12 @@ try {
     $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
-    $mail->setFrom('steelmaxfabrication@gmail.com', 'SteelMax Fabrications');
-    $mail->addAddress('dqureshiumar@gmail.com', 'SteelMax Fabrications');     // Add a recipient
+    $mail->setFrom('info@steelmaxfabrications.com', 'SteelMax Fabrications');
+    $mail->addAddress('info@steelmaxfabrications.com', 'SteelMax Fabrications');     // Add a recipient
     //$mail->addAddress('ellen@example.com');               // Name is optional
     $mail->addReplyTo('info@steelmaxfabrications.com', 'SteelMax Fabrications');
-    //$mail->addCC('cc@example.com');
+    $mail->addCC('abbas@steelmaxfabrications.com');
+    $mail->addCC('hanif@steelmaxfabrications.com');
     //$mail->addBCC('bcc@example.com');
 
     // Attachments
@@ -41,10 +42,10 @@ try {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = $subject;
-    $mail->Body = 'Name:'.$namee.'<br>Email:'.$emaill.'<br>Message:'.$message;
+    $mail->Body = '<html>Name:'.$namee.'<br>Email:'.$emaill.'<br>Message:'.$message.'</html>';
     #$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-    
-    if($mail->send()){
+    $varr = $mail->send();
+    if($varr){
         echo "Thank you for contacting us. We'll get back to you shortly";
     }
     else{
