@@ -31,8 +31,8 @@ try {
     $mail->addAddress('info@steelmaxfabrications.com', 'SteelMax Fabrications');     // Add a recipient
     //$mail->addAddress('ellen@example.com');               // Name is optional
     $mail->addReplyTo('info@steelmaxfabrications.com', 'SteelMax Fabrications');
-    $mail->addCC('abbas@steelmaxfabrications.com');
-    $mail->addCC('hanif@steelmaxfabrications.com');
+    $mail->addCC('steelmaxfabrication@gmail.com');
+    // $mail->addCC('hanif@steelmaxfabrications.com');
     //$mail->addBCC('bcc@example.com');
 
     // Attachments
